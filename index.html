@@ -6,7 +6,11 @@
     <title>Resume</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <h1 class="game1heading">Calculator :-</h1>
+
+    <!-- //calculator -->
     <div class="main_container">
       <input type="text" name="" id="display" />
       <div class="button_container">
@@ -185,14 +189,114 @@
         >
           =
         </button>
-
-        
-        
       </div>
     </div>
+
+    <hr />
+    <br />
+    <hr />
+
+    <h1 class="game1heading">Stone , paper & Scissor Game :-</h1>
+
+    <!-- //stone-paper scissor -->
+    <div class="game1">
+      <button
+        onclick="
+      random_num = Math.random() * 3;
+      computer_choice = '';
+      if (random_num > 0 && random_num <= 1) {
+        computer_choice += 'stone';
+      } else if (random_num > 1 && random_num <= 2) {
+        computer_choice += 'paper';
+      } else {
+        computer_choice += 'scissor';
+      }
+      
+      if(computer_choice=== 'scissor'){
+       alert(`You chose Stone
+Computer chooses Scissor
+Hurrah! You won`);
+      }else if(computer_choice=== 'paper'){
+        alert(`You chose Stone
+Computer chooses Paper
+You loss`);
+      }else{
+        alert(`You chose Stone
+Computer chooses Stone
+Game tied `);
+      }
+      "
+      >
+        Stone
+      </button>
+
+      <button
+        onclick="
+       random_num = Math.random() * 3;
+      computer_choice = '';
+      if (random_num > 0 && random_num <= 1) {
+        computer_choice += 'stone';
+      } else if (random_num > 1 && random_num <= 2) {
+        computer_choice += 'paper';
+      } else {
+        computer_choice += 'scissor';
+      }
+      
+      if(computer_choice=== 'stone'){
+       alert(`You chose Paper
+Computer chooses Stone
+Hurrah! You won`);
+      }else if(computer_choice=== 'scissor'){
+        alert(`You chose Paper
+Computer chooses scissor
+You loss`);
+      }else{
+        alert(`You chose Paper
+Computer chooses Paper
+Game tied `);
+      }
+      "
+      >
+        Paper
+      </button>
+
+      <button
+        onclick="
+      random_num = Math.random() * 3;
+      computer_choice = '';
+      if (random_num > 0 && random_num <= 1) {
+        computer_choice += 'stone';
+      } else if (random_num > 1 && random_num <= 2) {
+        computer_choice += 'paper';
+      } else {
+        computer_choice += 'scissor';
+      }
+      
+      if(computer_choice=== 'paper'){
+       alert(`You chose Scissor
+Computer chooses Paper
+Hurrah! You won`);
+      }else if(computer_choice=== 'stone'){
+        alert(`You chose Scissor
+Computer chooses Stone
+You loss`);
+      }else{
+        alert(`You chose Scissor
+Computer chooses Scissor  
+Game tied `);
+      }
+      "
+      >
+        Scissor
+      </button>
+    </div>
+
     <script>
       let currentdisplay = "";
       document.querySelector("#display").value = currentdisplay;
+
+      let random_num;
+      let computer_choice;
     </script>
   </body>
 </html>
