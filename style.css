@@ -1,9 +1,9 @@
 body {
     background-color: #f4f4f4;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;     
 }
-
-
+/* 1 */
 .main_container {
     width: 90%;
     max-width: 350px;
@@ -11,8 +11,6 @@ body {
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    /* position: relative;
-    left:35% ; */
 }
 
 #display {
@@ -63,13 +61,18 @@ body {
 .button:nth-child(4n):hover {
     background-color: #e67e22;
 }
-
+.problem{
+    display:flex;
+    justify-content: center;
+}
 @media (max-width: 400px) {
     .button {
         flex: 1 0 18%;
         min-width: 50px;
     }
 }
+
+/* 2 */
 .game1{
     display: flex;
     justify-content: space-evenly;
@@ -95,4 +98,95 @@ body {
     .game1{
         width:95%;
     }
+}
+.problem1{
+    display:flex;
+    justify-content: center;
+}
+.problem2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width:auto;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 3 */
+
+.dowry_container {
+  background-color: #1e1e2f;
+  width: 100%;
+  max-width: 450px;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.dowry_container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.form_element {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form_element label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form_element select {
+  width: 100%;
+  padding: 10px 8px;
+  background-color: #2c2c3f;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  appearance: none;
+}
+
+.form_element select:focus {
+  outline: 2px solid #f39c12;
+}
+
+.boton {
+  grid-column: span 2;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #f39c12;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton:hover {
+  background-color: #e67e22;
+  transform: translateY(-2px);
+}
+
+.boton:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 500px) {
+  .dowry_container {
+    padding: 20px 15px;
+  }
+
+  .form_element {
+    grid-template-columns: 1fr;
+  }
+
+  .boton {
+    grid-column: span 1;
+  }
 }
