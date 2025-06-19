@@ -265,7 +265,6 @@ Won- ${score.win}, Loss- ${score.loss}, Tie- ${score.tie}`);
       <br>
 
       <button onclick="
-  localStorage.removeItem('Score');
   score = {
     win: 0,
     loss: 0,
@@ -365,17 +364,19 @@ Won- ${score.win}, Loss- ${score.loss}, Tie- ${score.tie}`);
   // problem 1
   let random_num;
   let computer_choice;
-  let score;
-let scoreStr= localStorage.getItem('Score');
-  if (scoreStr !== undefined) {
-    score = JSON.parse(scoreStr);
-  } else {
-    score = {
-      win: 0,
-      loss: 0,
-      tie: 0,
-    };
-  }
+let scoreStr = localStorage.getItem('Score');
+let score;
+
+if (scoreStr) {
+  score = JSON.parse(scoreStr);
+} else {
+  score = {
+    win: 0,
+    loss: 0,
+    tie: 0
+  };
+}
+
 
   // problem 2
   document.getElementById('dowryForm').addEventListener('submit', function (e) {
