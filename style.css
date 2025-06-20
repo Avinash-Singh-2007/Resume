@@ -300,7 +300,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 @media (max-width: 422px) {
 .problem3 .main_container {
-  grid-template-columns: minmax(155px, auto) minmax(134px, auto)  ; 
+  grid-template-columns: minmax(155px, auto) 134px  ; 
 }
 .problem3 .list{
  grid-template-columns: minmax(142px, auto) minmax(96px, auto) 38px ; 
