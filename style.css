@@ -1,120 +1,125 @@
 body {
-    background-color: #f4f4f4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;     
+  background-color: #f4f4f4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
+
 /* 1 */
-.main_container {
-    width: 90%;
-    max-width: 350px;
-    background-color: #1e1e2f;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+.problem .main_container {
+  width: 90%;
+  max-width: 350px;
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-#display {
-    width: 90%;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    padding: 12px 16px;
-    border-radius: 8px;
-    border: none;
-    background-color: #2c2c3f;
-    color: #fff;
-    text-align: right;
+.problem #display {
+  width: 90%;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2c2c3f;
+  color: #fff;
+  text-align: right;
 }
 
-.button_container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.problem .button_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.button {
-    flex: 1 0 22%;
-    aspect-ratio: 1 / 1;
-    min-width: 40px;
-    max-width: 80px;
-    font-size: 1.3rem;
-    border-radius: 8px;
-    border: none;
-    background-color: #3f3f5f;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
+.problem .button {
+  flex: 1 0 22%;
+  aspect-ratio: 1 / 1;
+  min-width: 40px;
+  max-width: 80px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #3f3f5f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
 }
 
-.button:hover {
-    background-color: #5a5aa0;
+.problem .button:hover {
+  background-color: #5a5aa0;
 }
 
-.button:active {
-    transform: scale(0.95);
+.problem .button:active {
+  transform: scale(0.95);
 }
 
-.button:nth-child(4n) {
-    background-color: #f39c12;
+.problem .button:nth-child(4n) {
+  background-color: #f39c12;
 }
 
-.button:nth-child(4n):hover {
-    background-color: #e67e22;
+.problem .button:nth-child(4n):hover {
+  background-color: #e67e22;
 }
-.problem{
-    display:flex;
-    justify-content: center;
+
+.problem {
+  display: flex;
+  justify-content: center;
 }
+
 @media (max-width: 400px) {
-    .button {
-        flex: 1 0 18%;
-        min-width: 50px;
-    }
+  .problem .button {
+    flex: 1 0 18%;
+    min-width: 50px;
+  }
 }
 
 /* 2 */
-.game1{
-    display: flex;
-    justify-content: space-evenly;
-    width:385px;
-    border: 2px solid gray;
-    border-radius: 8px;
-    background-color: #1e1e2f;
-    font-size:2.5rem;
-    flex-wrap: wrap;
+.problem1 .game1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 385px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  background-color: #1e1e2f;
+  font-size: 2.5rem;
+  flex-wrap: wrap;
 }
 
-.game1 button{
-    margin: 15px;
-    font-size: 20px;
-    color: #fff;
-    border-radius:5px;
-    border:none;
-    cursor: pointer;
-    background-color: #3f3f5f;
-    color:ffffff;
+.problem1 .game1 button {
+  margin: 15px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #3f3f5f;
+  color: #ffffff;
 }
-@media (max-width:400px) {
-    .game1{
-        width:95%;
-    }
+
+@media (max-width: 400px) {
+  .problem1 .game1 {
+    width: 95%;
+  }
 }
-.problem1{
-    display:flex;
-    justify-content: center;
+
+.problem1 {
+  display: flex;
+  justify-content: center;
 }
+
+/* 3 */
 .problem2 {
   display: flex;
   justify-content: center;
   padding: 20px;
-  width:auto;
+  width: auto;
   color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* 3 */
-
-.dowry_container {
+.problem2 .dowry_container {
   background-color: #1e1e2f;
   width: 100%;
   max-width: 450px;
@@ -124,24 +129,24 @@ body {
   color: #fff;
 }
 
-.dowry_container h3 {
+.problem2 .dowry_container h3 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.4rem;
 }
 
-.form_element {
+.problem2 .form_element {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
 
-.form_element label {
+.problem2 .form_element label {
   font-weight: 600;
   font-size: 0.95rem;
 }
 
-.form_element select {
+.problem2 .form_element select {
   width: 100%;
   padding: 10px 8px;
   background-color: #2c2c3f;
@@ -152,11 +157,11 @@ body {
   appearance: none;
 }
 
-.form_element select:focus {
+.problem2 .form_element select:focus {
   outline: 2px solid #f39c12;
 }
 
-.boton {
+.problem2 .boton {
   grid-column: span 2;
   padding: 12px;
   font-size: 1rem;
@@ -168,25 +173,157 @@ body {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.boton:hover {
+.problem2 .boton:hover {
   background-color: #e67e22;
   transform: translateY(-2px);
 }
 
-.boton:active {
+.problem2 .boton:active {
   transform: translateY(0);
 }
 
 @media (max-width: 500px) {
-  .dowry_container {
+  .problem2 .dowry_container {
     padding: 20px 15px;
   }
 
-  .form_element {
+  .problem2 .form_element {
     grid-template-columns: 1fr;
   }
 
-  .boton {
+  .problem2 .boton {
     grid-column: span 1;
   }
+}
+
+/* 4 */
+.problem3 {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.problem3 .main_container {
+  width: 90%;
+  background-color: #2e2e48;
+  padding: 20px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: auto 140px 40px;
+  gap: 10px;
+  max-width: 450px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.problem3 input.input,
+.problem3 input.date {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #1e1e2f;
+  color: #fff;
+  font-size: 1rem;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.problem3 input::placeholder {
+  color: white;
+}
+
+.problem3 .add {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.problem3 .add:hover {
+  background-color: #43a047;
+}
+
+.problem3 .list {
+  grid-template-columns: 254px 138px 38px;
+  grid-column: span 3;
+  display: grid;
+  gap: 8px 10px;
+  background-color: #1e1e2f;
+  padding: 10px 6px;
+  border-radius: 8px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.problem3 .list span {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  background-color: #33334d;
+  border-radius: 6px;
+  word-break: break-word;
+}
+.problem3 .list button {
+  background-color: #1e1e2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 2px;
+}
+
+.problem3 .list button:hover {
+  background-color: #e53935;
+}
+
+.problem3 .list button span {
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #e53935;
+}
+
+@media (max-width: 540px) {
+.problem3 .main_container {
+  grid-template-columns: minmax(155px, auto) 134px 40px;
+}
+.problem3 .list{
+  grid-template-columns: minmax(142px, auto) 132px 38px;
+}
+}
+@media (max-width: 422px) {
+.problem3 .main_container {
+  grid-template-columns: minmax(155px, auto) minmax(134px, auto)  ; 
+}
+.problem3 .list{
+ grid-template-columns: minmax(142px, auto) minmax(96px, auto) 38px ; 
+}
+.problem3 .add{
+  grid-column: span 3;
+}
+
+}
+@media (max-width: 370px) {
+.problem3 .main_container {
+  grid-column: span 3;
+  grid-template-columns: auto;
+}
+.problem3 input.input{
+    grid-column: span 3;
+  grid-template-columns: auto;
+}
+.problem3 .add{
+  grid-column: span 3;
+}
+.problem3 input.date{
+    grid-column: span 3;
+  grid-template-columns: auto;
+}
 }

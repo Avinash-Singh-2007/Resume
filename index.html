@@ -361,9 +361,29 @@ redeem
       </form>
     </div>
   </div>
+<hr>
+<br>
+<hr>
 
 
 
+<!-- To-Do List -->
+
+
+<h1>Todo List :-</h1>
+
+<div class="problem3">
+  <div class="main_container">
+    <input class="input" type="text" placeholder="Add your new todo">
+  <input class="date" type="date">
+<button class="add" onclick="addTodo();"><span class="material-symbols-outlined">
+add
+</span></button>
+
+<div class="list"></div>
+
+  </div>
+</div>
 </body>
 
 </html>
@@ -398,6 +418,54 @@ if (scoreStr) {
       this.reportValidity(); // show built-in browser validation
     }
   });
+   
+   // problem 3
+let todo = JSON.parse(localStorage.getItem('todoList')) || [];
+showTodo();
+
+function addTodo() {
+  let inputElement = document.querySelector('.input');
+  let inputValue = inputElement.value.trim();
+  let dateElement = document.querySelector('.date');
+  let dateValue = dateElement.value;
+
+  if (inputValue === '' || dateValue === '') {
+    alert('Please enter both task and date.');
+    return;
+  }
+
+  todo.push({ item: inputValue, date: dateValue });
+  localStorage.setItem('todoList', JSON.stringify(todo)); // SAVE TO LOCAL STORAGE
+  inputElement.value = '';
+  dateElement.value = '';
+  showTodo();
+}
+
+function showTodo() {
+  let displayElement = document.querySelector('.list');
+
+  if (todo.length === 0) {
+    displayElement.innerHTML = '<span style="grid-column: span 3; text-align: center; opacity: 0.7;">No tasks yet</span>';
+    return;
+  }
+
+  let newhtml = '';
+  for (let i = 0; i < todo.length; i++) {
+    let { item, date } = todo[i];
+    newhtml += `
+      <span>${item}</span>
+      <span>${date}</span>
+      <button onclick="deleteTodo(${i})"><span class="material-symbols-outlined">delete</span></button>
+    `;
+  }
+  displayElement.innerHTML = newhtml;
+}
+
+function deleteTodo(index) {
+  todo.splice(index, 1);
+  localStorage.setItem('todoList', JSON.stringify(todo)); // UPDATE LOCAL STORAGE AFTER DELETE
+  showTodo();
+}
 
 
 </script>
