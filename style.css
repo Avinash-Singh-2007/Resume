@@ -300,7 +300,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 @media (max-width: 422px) {
 .problem3 .main_container {
-  grid-template-columns: minmax(155px, auto) 134px  ; 
+  grid-template-columns: minmax(155px, auto) auto  ; 
 }
 .problem3 .list{
  grid-template-columns: minmax(142px, auto) minmax(96px, auto) 38px ; 
@@ -310,20 +310,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 }
-@media (max-width: 370px) {
+@media (max-width: 395px) {
 .problem3 .main_container {
   grid-column: span 3;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
+}
+.problem3 .list{
+  grid-column: span 3;
+ grid-template-columns: 1fr ; 
 }
 .problem3 input.input{
     grid-column: span 3;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
 }
 .problem3 .add{
-  grid-column: span 3;
+  grid-column: 1fr;
 }
 .problem3 input.date{
     grid-column: span 3;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
 }
 }
