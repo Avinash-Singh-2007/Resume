@@ -298,7 +298,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   grid-template-columns: minmax(142px, auto) 132px 38px;
 }
 }
-@media (max-width: 422px) {
+/* @media (max-width: 422px) {
 .problem3 .main_container {
   grid-template-columns: minmax(155px, auto) auto  ; 
 }
@@ -308,26 +308,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .problem3 .add{
   grid-column: span 3;
 }
+  } */
 
-}
-@media (max-width: 395px) {
+@media (max-width: 422px) {
 .problem3 .main_container {
   grid-column: span 3;
   grid-template-columns: 1fr;
 }
 .problem3 .list{
-  grid-column: span 3;
- grid-template-columns: 1fr ; 
+ grid-template-columns: minmax(142px, auto) minmax(96px, auto) 38px ; 
 }
 .problem3 input.input{
     grid-column: span 3;
   grid-template-columns: 1fr;
 }
 .problem3 .add{
+    grid-column: span 3;
   grid-column: 1fr;
 }
 .problem3 input.date{
     grid-column: span 3;
+  grid-template-columns: 1fr;
+}
+}
+@media (max-width: 388px) {
+.problem3 .list{
+  grid-column: span 3;
   grid-template-columns: 1fr;
 }
 }
