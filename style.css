@@ -227,7 +227,11 @@ body {
   font-size: 1rem;
 }
 
-
+.problem3 input.date {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 .problem3 input::placeholder {
   color: white;
